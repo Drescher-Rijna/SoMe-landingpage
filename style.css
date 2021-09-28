@@ -1,0 +1,423 @@
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    color: white;
+    background-color: #cb142a;
+}
+
+#pagewrap {
+    margin: 0 10%;
+}
+
+#videoer h2,
+#billeder h2,
+#stories-titel {
+    margin-bottom: 1em;
+    text-align: center;
+    color: #cb142a;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+#stories-titel {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+/* HERO */
+#hero-image {
+    position: relative;
+    height: 80vh;
+    background-image: url("presentation-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#hero-image h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+#hero-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+
+/* STORIES */
+#stories-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 0em;
+    margin-bottom: 3em;
+}
+
+#stories {
+    position: relative;
+}
+#stories img {
+    height: 100px;
+    width: 100px;
+    border-radius: 999px;
+    position: relative;
+    border: 2px solid white;
+    cursor: pointer;
+    
+}
+
+.conic:after {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    z-index: -1;
+    border-radius: 9999px;
+    content: '';
+    width: 108px;
+    height: 108px;
+    background-image: conic-gradient( #dd287b, #feda77, #f58529, #dd287b );
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin { 
+    100% { 
+      transform: rotate(360deg);
+    }
+  }
+
+
+/* VIDEOER */
+#videoer {
+    margin-bottom: 5em;
+}
+
+#video-galleri {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: start center;
+    row-gap: 30px;
+}
+
+#video-galleri video {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* MODAL FOR POST */
+.modal-post .modal-body {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    background-color: black;
+    color: black;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.modal-post .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-post .modal-content .card {
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    height: 450px;
+    width: 400px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-post .card-header {
+    background-color: white;
+}
+
+.modal-post .card-header img {
+ width: 40px;
+ height: 40px;
+ border-radius: 9999px;
+}
+
+.modal-post .card-header {
+    padding: 10px 20px;
+}
+.modal-post .card-body {
+    padding: 20px 20px 40px 20px;
+    overflow-y: scroll;
+}
+
+.thumbnail {
+    width: 400px;
+    height: 230px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.thumbnail img {
+    width: 100px;
+    height: auto;
+}
+
+.thumbnail:hover {
+    opacity: 0.8;
+}
+
+.timelapse-thumb {
+    background-image: url("./afslutning.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.interview-thumb {
+    background-image: url("./interview-med-nicoline.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.giw-thumb {
+    background-image: url("./green.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.intro-thumb {
+    background-image: url("./tilbage-igen.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.introbilleder-thumb {
+    background-image: url("./presentation-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.define-thumb {
+    background-image: url("./definefase-1-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* MODAL FOR STORIES */
+#myModal .modal-header {
+    border: none;
+    width: 100%;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
+#myModal .modal-content {
+    background-color: #1a1a1a;
+    color: white;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myModal .modal-body {
+    max-width: 600px;
+    width: 600px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myModal .modal-body #carouselExampleIndicators {
+    max-height: 100%;
+    max-width: 550px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myModal .modal-body #carouselExampleIndicators .carousel-item video {
+    max-height: 550px;
+    max-width: 300px;
+    margin: auto;
+    width: 100% !important;
+    height: auto !important;
+}
+
+#myModal .modal-title {
+    color: white;
+}
+
+#myModal .btn-close {
+    color: #fff; 
+    opacity: 1;
+    background-image: none;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+#myModal .btn-close:hover {
+    color: #fff;
+}
+
+#myModal {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BILLEDER */
+#billeder {
+    margin-bottom: 5em;
+}
+
+#billed-galleri {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: start center;
+    row-gap: 30px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #billed-galleri {
+        grid-template-columns: 1fr;
+        place-content: center;
+        place-items: center;
+    }
+
+    #video-galleri {
+        grid-template-columns: 1fr;
+        place-content: center;
+        place-items: center;
+    }
+
+    #hero-image h1 {
+        text-align: center;
+    }
+
+    .thumbnail {
+        max-width: 70%;
+        height: 170px;
+    }
+
+
+
+
+    /* MODAL FOR POST */
+    .modal-post .modal-body {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 1fr;
+        flex-direction: column;
+    
+    }
+
+.modal-post .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-post .modal-content .card {
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    height: 250px;
+    width: 100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+}
+
+.modal-post .card-header {
+    background-color: white;
+}
+
+.modal-post .card-header img {
+ width: 40px;
+ height: 40px;
+ border-radius: 9999px;
+}
+
+.modal-post .card-header {
+    padding: 10px 20px;
+}
+.modal-post .card-body {
+    padding: 20px 20px 40px 20px;
+    overflow-y: scroll;
+}
+
+    
+
+}
